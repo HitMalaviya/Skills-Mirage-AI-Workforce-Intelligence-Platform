@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skills Mirage - AI Workforce Intelligence Platform
 
-## Getting Started
+Skills Mirage is a full-stack, AI-powered workforce intelligence platform designed to analyze job market trends, skill demands, and automation risks. It provides actionable insights for professionals and organizations to navigate the evolving job landscape driven by Artificial Intelligence.
 
-First, run the development server:
+## 🌟 Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **📊 Dashboard & Hiring Trends:** Visualize job volume over time, sector distribution, and geographic hiring heatmaps across India using interactive charts and maps.
+- **🧠 Skills Intelligence:** Track rising vs. declining skills, skill evolution timelines, and skill gap analyses to stay ahead of market demands.
+- **⚠️ AI Vulnerability Index:** Monitor automation risks for specific roles and explore safe career transitions with interactive vulnerability heatmaps.
+- **🛡️ Personal Risk Analysis:** Calculate your personal risk score against AI automation and generate tailored transition plans.
+- **👤 Worker Career Profile:** AI-driven profile analysis based on experience, current role, and location.
+- **🛣️ Career Transition Roadmap:** Generate personalized, AI-powered learning plans and course recommendations for upskilling.
+- **💬 AI Career Chat:** Real-time conversational AI guide (powered by Groq) to answer career-related queries in multiple languages.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technology Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend:** [Next.js](https://nextjs.org/) (App Router), React, Tailwind CSS
+- **Data Visualization:** Chart.js, Recharts, React-Leaflet, React-Simple-Maps
+- **Backend & APIs:** Next.js API Routes, Groq SDK for AI Chat, AI APIs
+- **Authentication & Database:** Firebase, Supabase
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
+- Node.js 18.x or later
+- npm, yarn, or pnpm
+- API Keys for Supabase, Firebase, and Groq/AI providers
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/HitMalaviya/Skills-Mirage-AI-Workforce-Intelligence-Platform.git
+   cd Skills-Mirage-AI-Workforce-Intelligence-Platform
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Environment Setup:**
+   Create a `.env.local` file in the root directory and add your API keys. Without these keys, AI features (like Profile Analysis, Roadmap Generation, and Chat) will not function correctly.
+   ```env
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+   # Add your Supabase, Groq, and other required API keys here
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Run the Development Server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **View the Application:**
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📂 Project Structure
+
+- `/src/app`: Contains all Next.js pages and API routes (e.g., `/api/chat`, `/api/analyze`, `/api/reskilling`).
+- `/src/components`: Reusable UI components including layout elements (Header, Sidebar) and custom charts/maps.
+- `/src/data`: Static mock data for trends, hiring, and risks.
+- `/src/hooks`: Custom React hooks (like `useMarketData`) for data fetching and state management.
+- `/src/lib`: Configuration and initialization files for external services (Firebase, Supabase).
+- `/src/context`: React Context providers for global state (e.g., AuthContext).
+
+## 🐛 Troubleshooting & Known Issues
+
+- **AI Features failing (500 Error):** If the Career Chat, Worker Profile Analysis, or Reskilling Roadmap generation fails, it means your AI API keys (like Groq) are either missing or invalid in the `.env.local` file. 
+
+---
+*Built to empower the future workforce.*
