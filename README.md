@@ -1,5 +1,7 @@
 # Skills Mirage - AI Workforce Intelligence Platform
 
+**🚀 [View Live Demo](https://skills-mirage-ai-workforce-intellig.vercel.app/)**
+
 Skills Mirage is a full-stack, AI-powered workforce intelligence platform designed to analyze job market trends, skill demands, and automation risks. It provides actionable insights for professionals and organizations to navigate the evolving job landscape driven by Artificial Intelligence.
 
 ## 🌟 Key Features
